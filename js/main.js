@@ -22,11 +22,28 @@ jQuery(document).ready(function(){
         $('html,body').animate({scrollTop:$(menu_attr).offset().top},1000);
     });
     //스킬바
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},3000);
+    $(window).scroll(function(){
+        //화면 맨위쪽 위치 : 0을 변수에 저장
+        var winTop=$(this).scrollTop();
+       //화면 아래쪽 위치를 변수에 저장
+        var winBottom=winTop+$(window).height();
+        //두반째 section의 시작 위치값을 변수에 저장
+        var secTop=$('.profile').offset().top;
+        
+        if(secTop<winTop || secTop>winBottom){
+           $('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')
+		},2000);
 	});
+        }else {
+            jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:0},2000);
+	       });        
+        }
+    });
+    
     //swiper 슬라이드(웹 포트폴리오)
         var swiper = new Swiper('.swiper-container', {
             loop:true,
