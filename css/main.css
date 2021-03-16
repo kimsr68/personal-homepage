@@ -108,6 +108,12 @@ section.intro h1 {
   -webkit-font-smoothing: antialiased;
     line-height: 7vw;
 }
+section.intro h2 {
+    font-size: 0.8vw;
+    margin-top: 43vw;
+    text-align: center;
+    color: #888;
+}
 
 section.intro h1 span {
   position: relative;
@@ -391,6 +397,7 @@ p{
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
+    transition: width 1s;
 }
 .skill-bar-percent {
 	position:absolute;
@@ -401,6 +408,24 @@ p{
 	line-height:50px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.5);
+}
+.sk1.active {
+    width: 90%;
+}
+.sk2.active {
+    width: 70%;
+}
+.sk3.active {
+    width: 60%;
+}
+.sk4.active {
+    width: 60%;
+}
+.sk5.active {
+    width: 30%;
+}
+.sk6.active {
+    width: 30%;
 }
 section.web {
     background-color: #d5c4c4;

@@ -21,28 +21,31 @@ jQuery(document).ready(function(){
         var menu_attr=$(this).attr('href');
         $('html,body').animate({scrollTop:$(menu_attr).offset().top},1000);
     });
-    //스킬바
+//스킬바
     $(window).scroll(function(){
         //화면 맨위쪽 위치 : 0을 변수에 저장
-        var winTop=$(this).scrollTop();
-       //화면 아래쪽 위치를 변수에 저장
+        var winTop=$(window).scrollTop();
+        //화면 아래쪽 위치를 변수에 저장
         var winBottom=winTop+$(window).height();
-        //두반째 section의 시작 위치값을 변수에 저장
-        var secTop=$('.profile').offset().top;
         
-        if(secTop<winTop || secTop>winBottom){
-           $('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width:$(this).attr('data-percent')
-		},2000);
-	});
-        }else {
-            jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:0},2000);
-	       });        
+        //두번째 section의 시작 위치값을 변수에 저장
+        var secTop=$('.profile').offset().top+500;
+        var secBottom=secTop+$('.profile').height()-1000
+        
+        //top < wBottom && bottom > wTop
+        if(secTop<winBottom && secBottom>winTop){
+            $('.skillbar').each(function(){
+		          $(this).find('.skillbar-bar').addClass('active');
+	        });
+        }else{
+            $('.skillbar').each(function(){
+		          $(this).find('.skillbar-bar').removeClass('active');
+	        });
         }
+            
+        
     });
+    
     
     //swiper 슬라이드(웹 포트폴리오)
         var swiper = new Swiper('.swiper-container', {
