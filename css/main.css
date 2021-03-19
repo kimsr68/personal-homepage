@@ -1761,7 +1761,8 @@ section.web .swiper-slide .swi_left img{
 }
 section.web .swiper-slide .swi_right {
     margin-top: 65vw;
-    font-size:10vw;
+    font-size: 10vw;
+    
 }
 section.web .swiper-slide .swi_wrap > div {
     width: 100%;
@@ -1774,11 +1775,13 @@ section.web .swiper-slide .swi_wrap > div h2 {
 }
 section.web .swiper-slide .swi_wrap > div h3 {
     font-size: 5vw;
+    margin-top: 10vw;
 }
 section.web .swiper-slide div p {
-    font-size: 3.5vw;
+    font-size: 3vw;
     line-height: 5vw;
     margin-bottom: 1vw;
+    
 }
 section.web .swiper-slide div ul li {
     line-height: 1.5vw;
@@ -1797,6 +1800,7 @@ section.web .swiper-slide div ul li span {
 }
 section.web .swiper-slide div ul li h4 {
     margin-top: 7vw;
+    font-size: 3vw;
 }
 section.web .swiper-slide > div .slide_btn {
     margin-top: 5vw;
