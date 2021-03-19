@@ -50,8 +50,8 @@ jQuery(document).ready(function(){
     //swiper 슬라이드(웹 포트폴리오)
         var swiper = new Swiper('.swiper-container', {
             loop:true,
-            autoplay: {delay: 5000,
- },
+            /*autoplay: {delay: 5000,
+ },*/
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
