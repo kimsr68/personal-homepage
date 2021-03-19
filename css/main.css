@@ -89,7 +89,7 @@ width: 100%; height: 100%;
         position: relative;
     }
     section.intro {
-        background-image: url(../img/b1.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/kimsr68/personal/img/b1.png);
     }
 /* JUMP */
 section.intro h1 {
@@ -628,7 +628,7 @@ section .skill h1 {
     margin: 2vw;
 }
 section.contact {
-        background-image: url(../img/contact.jpg);
+        background-image: url(https://cdn.jsdelivr.net/gh/kimsr68/personal/img/contact.jpg);
 }
 section.contact h2 {
     font-size: 5vw;
@@ -750,7 +750,7 @@ width: 100%; height: 100%;
         position: relative;
     }
     section.intro {
-        background-image: url(../img/b1.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/kimsr68/personal/img/b1.png);
     }
 /* JUMP */
 section.intro h1 {
@@ -1260,7 +1260,7 @@ section .skill h1 {
     
 }
 section.contact {
-        background-image: url(../img/contact.jpg);
+        background-image: url(https://cdn.jsdelivr.net/gh/kimsr68/personal/img/contact.jpg);
 }
 section.contact h2 {
     font-size: 5vw;
@@ -1387,7 +1387,7 @@ width: 100%; height: 100%;
         position: relative;
     }
     section.intro {
-        background-image: url(../img/b1.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/kimsr68/personal/img/b1.png);
     }
 /* JUMP */
 section.intro h1 {
@@ -1881,7 +1881,7 @@ section.editable .small-demo a:hover img {
     transform: scale(1.05);
 }
 section.contact {
-    background-image: url(../img/contact.png);    
+    background-image: url(https://cdn.jsdelivr.net/gh/kimsr68/personal/img/contact.png);
 }
 section h1 {
     font-size: 5vw;
