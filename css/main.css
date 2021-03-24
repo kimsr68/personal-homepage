@@ -1872,6 +1872,7 @@ section.editable .small-demo {
     width: 100vw;
     margin-top: 3vw;
     margin: 0 auto;
+    margin-top: 10vw;
 }
 section.editable .small-demo a {
     width: 46vw;
